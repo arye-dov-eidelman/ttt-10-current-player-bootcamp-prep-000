@@ -1,4 +1,5 @@
 def turn_count(board)
+  each.board |cell|
   
 end
 

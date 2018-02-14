@@ -1,12 +1,11 @@
-def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
-end
-
 def turn_count(board)
+  result = 0
   each.board do |index|
-    position_taken?(board, location)
+    if board[index] != " " && board[index] != ""
+      result++
+    end
   end
-  
+  return result
 end
 
 def current_player(board)

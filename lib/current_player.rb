@@ -1,7 +1,7 @@
 def turn_count(board)
   result = 0
-  board.each do |index|
-    if board[index] != " " && board[index] != ""
+  board.each do |index1|
+    if board[index1] != " " && board[index1] != ""
       result+=1
     end
   end
